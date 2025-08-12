@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <a href="index.html" class="logo" aria-label="Home">
+          <img
+            src="https://images.glints.com/unsafe/glints-dashboard.oss-ap-southeast-1.aliyuncs.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png"
+            alt="Logo"
+          />
+        </a>
+        <span>My Website</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html" class="nav__link is-active">Home</a>
+        <a href="profile.html" class="nav__link">Our Profile</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#contact" class="nav__link">Message Us</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Open Menu">☰</button>
+    </header>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h1 id="welcomeTitle">Hi, Welcome To Website</h1>
+        <p class="sub">Ini adalah website latihan pertama</p>
+      </div>
+      <div
+        class="hero__banner"
+        role="img"
+        aria-label="Photo banner placeholder"
+      >
+        <span>1366×578</span>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="hq section">
+      <h2>Our Headquarter</h2>
+      <div class="hq__grid">
+        <figure class="hq__item">
+          <div class="hq__circle"></div>
+          <figcaption>Jakarta</figcaption>
+        </figure>
+        <figure class="hq__item">
+          <div class="hq__circle"></div>
+          <figcaption>Bandung</figcaption>
+        </figure>
+        <figure class="hq__item">
+          <div class="hq__circle"></div>
+          <figcaption>Surabaya</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <section id="contact" class="contact section">
+      <h2>Message Us</h2>
+      <div class="contact__grid">
+        <form id="contactForm" class="form" novalidate>
+          <label class="row">
+            <span class="label">Nama</span>
+            <div class="control">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nama"
+                required
+              />
+              <small class="error" data-error-for="name"></small>
+            </div>
+          </label>
+
+          <label class="row">
+            <span class="label">Tanggal Lahir</span>
+            <div class="control">
+              <input type="date" id="dob" name="dob" required />
+              <small class="error" data-error-for="dob"></small>
+            </div>
+          </label>
+
+          <div class="row">
+            <p class="label">Jenis Kelamin</p>
+            <div class="control">
+              <label class="radio"
+                ><input type="radio" name="gender" value="Laki-Laki" required />
+                Laki-Laki</label
+              >
+              <label class="radio"
+                ><input type="radio" name="gender" value="Perempuan" />
+                Perempuan</label
+              >
+              <small class="error" data-error-for="gender"></small>
+            </div>
+          </div>
+
+          <label class="row">
+            <span class="label">Pesan</span>
+            <div class="control">
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Pesan"
+                required
+              ></textarea>
+              <small class="error" data-error-for="message"></small>
+            </div>
+          </label>
+
+          <div class="submit-wrap">
+            <button type="submit" class="btn">Submit</button>
+          </div>
+        </form>
+
+        <aside class="contact__result">
+          <div class="panel">
+            <p>
+              <strong>Current time :</strong>
+              <span id="currentTimeValue">—</span>
+            </p>
+            <p><strong>Nama :</strong> <span id="resName">—</span></p>
+            <p><strong>Tanggal Lahir :</strong> <span id="resDob">—</span></p>
+            <p>
+              <strong>Jenis Kelamin :</strong> <span id="resGender">—</span>
+            </p>
+            <p><strong>Pesan :</strong><br /><span id="resMessage">—</span></p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Created By RevoU</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
