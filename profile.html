@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Our Profile — My Website</title>
+    <title>Personal Profile — My Website</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -19,36 +19,144 @@
       </div>
       <nav class="nav">
         <a href="index.html" class="nav__link">Home</a>
-        <a href="profile.html" class="nav__link is-active">Our Profile</a>
+        <a href="profile.html" class="nav__link is-active">Profile</a>
         <a href="index.html#portfolio" class="nav__link">Portfolio</a>
         <a href="index.html#contact" class="nav__link">Message Us</a>
       </nav>
       <button class="nav__toggle" aria-label="Open Menu">☰</button>
     </header>
 
-    <section class="profile__banner">Photo Banner 1366×360</section>
+    <!-- Banner bergambar -->
+    <section class="profile__banner pp-banner">
+      <div class="pp-banner__inner">
+        <span class="pp-badge">Personal Profile</span>
+        <h1>Ahmad Bushairi</h1>
+        <p>Student @RevoU</p>
+      </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section class="profile__section grid-2">
+      <div>
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya seorang karyawan swasta yang bersemangat mempelajari teknologi
+          baru khususnya dibidang teknologi, saat ini saya bekerja sebagai IT
+          Support di sebuah perusahaan swasta.
+        </p>
+
+        <ul class="list">
+          <li>Domisili: Depok, Indonesia</li>
+          <li>Email: <a href="mailto:nama@contoh.com">sahry10@gmail.com</a></li>
+          <li>Telepon: <a href="tel:+6281234567890">+6285693922994</a></li>
+          <li>
+            Website:
+            <a
+              href="https://ahmadbushairi.web.id"
+              target="_blank"
+              rel="noopener"
+              >My Website</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <figure class="pp-figure">
+          <img
+            class="pp-avatar"
+            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop"
+            alt="Foto profil Nama Anda"
+          />
+          <figcaption>Siap berkolaborasi dalam proyek web.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Keahlian dan Tools -->
+    <section class="profile__section grid-2">
+      <div>
+        <h2>Keahlian Utama</h2>
+        <ul class="list">
+          <li>Jaringan</li>
+          <li>HTML</li>
+          <li>Performance & Accessibility dasar</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Tools & Teknologi</h2>
+        <ul class="list">
+          <li>Mikrotik</li>
+          <li>Figma</li>
+          <li>Troubleshooting</li>
+          <li>Hardware & Software</li>
+        </ul>
+      </div>
+    </section>
 
     <section class="profile__section">
-      <h1>About the Company</h1>
-      <p>
-        Kami perusahaan digital yang fokus pada pembuatan website sederhana,
-        cepat, dan responsif.
-      </p>
+      <h2>Pengalaman</h2>
+      <div class="pp-card">
+        <ul class="list">
+          <li>
+            <strong>IT Support Staff — PT Gema Indah Pratama</strong>
+            (2025–Sekarang)<br />
+            Bertanggung jawab atas pemeliharaan jaringan, troubleshooting
+            hardware/software, dan dukungan teknis untuk karyawan.
+          </li>
+          <li>
+            <strong>IT Operation Staff</strong> (2012–2025)<br />
+            Mengelola infrastruktur IT, melakukan instalasi perangkat keras, dan
+            memberikan dukungan teknis untuk sistem internal.
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="profile__section grid-2">
       <div>
-        <h2>Vision</h2>
-        <p>Menjadi mitra teknologi yang dipercaya banyak bisnis.</p>
+        <h2>Pendidikan</h2>
+        <div class="pp-card">
+          <ul class="list">
+            <li>
+              S1 Teknik Informatika — Universitas Indraprasta PGRI (2016–2020)
+            </li>
+          </ul>
+        </div>
       </div>
-      <div>
-        <h2>Mission</h2>
-        <ul class="list">
-          <li>Solusi web cepat & mudah digunakan.</li>
-          <li>UI/UX sederhana dan jelas.</li>
-          <li>Standar industri & best practice.</li>
-        </ul>
+
       </div>
+    </section>
+
+    <!-- Galeri singkat -->
+    <section class="profile__section">
+      <h2>Galeri</h2>
+      <div class="pp-gallery" aria-label="Galeri foto proyek/aktivitas">
+        <img
+          src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=1200&auto=format&fit=crop"
+          alt="Menulis kode di editor"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
+          alt="Kolaborasi tim"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
+          alt="Tampilan laptop dengan UI"
+        />
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="profile__section">
+      <h2>Ingin Bekerja Sama?</h2>
+      <p>
+        Saya terbuka untuk kesempatan kolaborasi, freelance, maupun full-time.
+       
+      </p>
+      <p>
+        <a href="index.html#contact">Kirim pesan melalui formulir »</a>
+      </p>
     </section>
 
     <footer class="footer"><p>Created By RevoU</p></footer>

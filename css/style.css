@@ -95,7 +95,7 @@ img {
 .hero__banner {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  height: 360px;
+  height: 500px;
   display: grid;
   place-items: center;
   color: #777;
@@ -285,5 +285,107 @@ textarea:focus {
   }
   .hero__banner {
     height: 280px;
+  }
+}
+
+/* ==============================
+   Profile Page (scoped: pp-)
+   ============================== */
+.pp-banner {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  min-height: 340px;
+  background: url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1960&auto=format&fit=crop")
+    center/cover no-repeat;
+}
+.pp-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.55));
+}
+.pp-banner__inner {
+  position: relative;
+  padding: 24px;
+  z-index: 1;
+}
+.pp-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ffffff55;
+  background: #ffffff22;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+.pp-banner h1 {
+  margin: 10px 0 4px;
+  font-size: clamp(28px, 5vw, 44px);
+}
+.pp-banner p {
+  margin: 0;
+  opacity: 0.95;
+}
+
+.pp-figure {
+  margin: 0;
+}
+.pp-avatar {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+.pp-card {
+  background: #ffffff;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+}
+
+.pp-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.pp-chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+}
+
+.pp-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.pp-gallery img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 900px) {
+  .pp-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .pp-gallery {
+    grid-template-columns: 1fr;
+  }
+  .pp-avatar {
+    max-width: 100%;
   }
 }
